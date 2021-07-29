@@ -461,8 +461,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-decoration: none;
   color: #495057;
   font-weight: 600;
-  font-size: 15px;
-  margin-left: 25PX;
+  font-size: 13px;
 }
 
 /*profile page*/
@@ -500,16 +499,106 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 30px;
 }
 /*attachments page*/
-#attachments h6{
+#attachments thead th{
   color: #08376B;
-  display: inline-block;
-  margin-top: 20px;
 }
 #attachments button{
   background: #08376B;
   color: white;
   border: none;
   padding: 5px 10px;
+}
+#attachments tbody td a{
+  color: red;
+}
+#attachments tbody th{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*job offer*/
+#second-page{
+  display: none;
+}
+#job-offers thead th{
+  color: #08376B;
+}
+#job-offers button{
+  background: #08376B;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+#job-offers tbody td a{
+  color: red;
+}
+#job-offers tbody th{
+  font-size: 15px;
+  font-weight: 500;
+}
+#job-offers .first-btn .btn1{
+  background: #08376B;
+  color: white;
+  border: none;
+  padding: 20px 24px;
+  margin: 50px 10px 20px 10px;
+}
+#job-offers .first-btn .btn2{
+  background: #08376B;
+  color: white;
+  border: none;
+  padding: 15px 250px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+#job-offers .last-btn{
+  background: #08376B;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  margin: 50px 10px 20px 10px;
+}
+
+
+
+/*timeline*/
+#timeline{
+  padding: 20px 50px 20px 20px;
+}
+#timeline .title{
+  color: #08376B;
+  font-size: 20px;
+  font-weight: bold;
+}
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 1;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
 }
  
 /*--------------------------------------------------------------

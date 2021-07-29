@@ -8,8 +8,7 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/icon-tab.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -102,15 +101,12 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-sm">
-                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <ul class="nav nav-tabs justify-content-center"  id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="attachments-tab" data-toggle="tab" href="#attachments" role="tab" aria-controls="attachments" aria-selected="false">Attachments</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="emails-tab" data-toggle="tab" href="#emails" role="tab" aria-controls="emails" aria-selected="false">Emails</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" id="job-offers-tab" data-toggle="tab" href="#job-offers" role="tab" aria-controls="job-offers" aria-selected="false">Job Offers</a>
@@ -147,191 +143,269 @@
   
                       <!--attachments page-->
                       <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="attachments-tab">
-                        <div class="row">
-                          <div class="col">
-                            <h6>Documentary Documents</h6>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <h6>File</h6>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <h6>Status</h6>
-                          </div>
-                        </div>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Documentary Requirements</th>
+                                <th scope="col">File</th>
+                                <th scope="col">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Letter of Intent</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSC Form 212, Revised 2017 (Personal Data Sheet) with ID picture taken within the last 6 months, 3.5cm x 4.5cm (passport size) and with full and handwritten name tag and signature overprinted name</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Curriculum Vitae</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy of Transcript of Records</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy of Diploma</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Certificatie fo the appropriate/required eligibility/licenses</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy of Professional Regulation Commission (PRC) professional ID card/certificate of registration/license and other eligibilities, if available</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy of ratings obtained in the Licensure Examination for teachers (LET)/Professional Board Examination for Teachers (PBET), if available.</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy from the authenticated copy of Diploma and TOR (authenticated by the school registrar)                                </th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy from the authenticated copy of unexpired PRC License / Board Rating / CS Eligibility                                </th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy of Certificate of relevant trainings / seminars attended (if applicable)                                </th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Photocopy of Certificate of Employment (if applicable)                                </th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Individual Performance Commitment and Review (IPCR) / Performance Rating in the last 2 rating periods, if applicable</th>
+                                <td><button>VIEW</button></td>
+                                <td><a href="">EMPTY</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> 
+                      </div>
 
-                        <div class="row">
-                          <div class="col">
-                            <p>Letter of Intent</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
+                      <!--job offer page-->
+                      <div class="tab-pane fade" id="job-offers" role="tabpanel" aria-labelledby="job-offers-tab">
+                          <div id="first-page">
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae natus ab atque laborum voluptatum provident unde! Voluptatum sequi in quisquam libero impedit nemo. Nam expedita itaque, aspernatur reprehenderit a doloribus. Fugit error illo quis labore laudantium amet est nihil, iusto vero? Necessitatibus ratione velit quidem eius beatae voluptatibus consequatur, officia sit. Quia inventore perferendis eius officia, maxime maiores, earum eos magnam repudiandae harum quo, distinctio odio dolor sequi at id? Veritatis quas distinctio dignissimos impedit saepe! Nisi harum totam eligendi, dolore rerum libero molestias doloremque cupiditate, unde, ratione repudiandae facere nesciunt tenetur minima nam! Incidunt consequatur sapiente mollitia vel suscipit ducimus cupiditate adipisci inventore dignissimos ea alias velit facilis consectetur ipsam harum, minima architecto id aspernatur perspiciatis! Repellendus vero corporis consequuntur quas. Odit fugiat aspernatur magni adipisci sint? Quod ratione non labore provident quaerat? Non cum repellendus eius harum voluptas architecto inventore laudantium aut velit, dolor rem consectetur quos, quasi dolorum cupiditate tenetur quibusdam quod, alias asperiores perferendis sed? Itaque voluptatem, molestiae animi non id sunt. Et aut sed veniam saepe, repellendus nam optio corporis fugiat provident error, voluptate numquam quos? Praesentium quasi vitae odit ea voluptate nisi. Laudantium non totam ipsa suscipit mollitia necessitatibus at quo corrupti ipsam saepe.</p>
+                              <div class="first-btn text-center">
+                                <button class="btn1" onclick="showStuff('first-page'); return false;">ACCEPT AND PROCEED TO  COMPILE PRE-EMPLOYMENT DOCUMENTS</button><br>
+                                <button class="btn2">DECLINE</button>
+                              </div> 
                         </div>
+                        
+                        <div id="second-page">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Documentary Requirements</th>
+                                  <th scope="col">File</th>
+                                  <th scope="col">Status</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr><th><b>A. Personal Documents</b></th></tr>
+                                <tr>
+                                  <th scope="row">Personal Data Sheet 3 Original (Notarized) - Long Bond Paper</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Clearance from Previous employer - 1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Original NSO Birth Certificate - 1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Marriage Certificate (if married) - 2 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Virth Certificate of children - 2 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
 
-                        <div class="row">
-                          <div class="col">
-                            <p>CSC Form 212, Revised 2017 (Personal Data Sheet) with ID picture taken within the last 6 months, 3.5cm x 4.5cm (passport size) and with full and handwritten name tag and signature overprinted name</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
+                                <tr><th><b>B. Educational Documents</b></th></tr>
+                                <tr>
+                                  <th scope="row">2 Authenticated Copies of Transcript of Records</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2 Authenticated Copies of Diploma (College, Graduate School, Post-graduate)</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2 Authenticated Copies of Certificate of Eligibility (if applicable)</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2 Authenticated Copies of PRC ID (if applicable)</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
 
-                        <div class="row">
-                          <div class="col">
-                            <p>Curriculum Vitae</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
+                                <tr><th><b>C. Government Documents</b></th></tr>
+                                <tr>
+                                  <th scope="row">Medical Certificate for pre-employment as per CSC form NO. 211
+                                    with documentary stamp and the following Medical Test results 
+                                    - 2 Original:</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">a. Blood Test - 1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">b. Urinalysis - 1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">c. Chest X-ray - 1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">d. Drug Test - 1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">e. Neuropsychiatric Examination w/ Pyschological Test
+                                    1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">NBI Clearance - 1 Original & 1 Photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Statement of Assets, Liabilities and Net Worth (SALN)
+                                    - 3 Original (Notarized)</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">BIR Form 1902 (Application for Refistration) and Form 2305
+                                    - 2 Original (Downloadable)</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Pag Ibig Fund member’s Data Form (MDF) with Registration
+                                    Tracking Number (RTN) - 1 Original & 1 photocopy</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Philhealth Number and Philhealth Membership Form with 
+                                    Philhealth Number - 2 Original</th>
+                                  <td><button>UPLOAD</button></td>
+                                  <td><a href="">EMPTY</a></td>
+                                </tr>
 
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy of Transcript of Records</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
+                               
+                              </tbody>
+                            </table>
+                            <div class="last-btn text-center">
+                              <button>SUBMIT</button>
+                            </div>
+                            
+                          </div> 
 
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy of Diploma</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Certificate fo the appropriate/required eligibility/licenses.</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy of Professional Regulation Commission (PRC) professional ID card/certificate of registration/license and other eligibilities, if available</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy of ratings obtained in the Licensure Examination for teachers (LET)/Professional Board Examination for Teachers (PBET), if available.</p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy from the authenticated copy of Diploma and TOR (authenticated by the school registrar)
-                            </p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy from the authenticated copy of unexpired PRC License / Board Rating / CS Eligibility
-                            </p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy of Certificate of relevant trainings / seminars attended (if applicable)
-                            </p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Photocopy of Certificate of Employment (if applicable)
-                            </p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <p>Individual Performance Commitment and Review (IPCR) / Performance Rating in the last 2 rating periods, if applicable
-                            </p>
-                          </div>
-                          <div class="col-lg-2 text-center">
-                            <button>VIEW</button>
-                          </div>
-                          <div class="col col-lg-2 text-center">
-                            <p>EMPTY</p>
-                          </div>
                         </div>
 
                         
-                      </div>
-  
-                      <!--email page-->
-                      <div id="emails">
-                        
-                      </div>
+
                       </div>
 
-
-                   
-
+                      <!--timeline page-->
+                      <div class="tab-pane fade" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <ul class="timeline">
+                                <li>
+                                  <a class="title" target="#" href="#">Application</a>
+                                  <a href="#" class="float-right text-muted">21 March, 2014</a>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                                </li>
+                                <li>
+                                  <a class="title" href="#">Shortlisted</a>
+                                  <a href="#" class="float-right text-muted">4 March, 2014</a>
+                                  <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                </li>
+                                <li>
+                                  <a class="title" href="#">Screening Interview</a>
+                                  <a href="#" class="float-right text-muted">1 April, 2014</a>
+                                  <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                </li>
+                                <li>
+                                  <a class="title" href="#">Teaching Demo</a>
+                                  <a href="#" class="float-right text-muted">4 March, 2014</a>
+                                  <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                </li>
+                                <li>
+                                  <a class="title" href="#">Summary of Ratings added</a>
+                                  <a href="#" class="float-right text-muted">1 April, 2014</a>
+                                  <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>

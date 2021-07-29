@@ -21,14 +21,6 @@ jQuery(document).ready(function ($) {
     zIndex: '50'
   });
 
-  // Intro background carousel
-  $("#intro-carousel").owlCarousel({
-    autoplay: true,
-    dots: false,
-    loop: true,
-    animateOut: 'fadeOut',
-    items: 1
-  });
 
   // Initiate the wowjs animation library
   new WOW().init();
@@ -115,60 +107,16 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
-  // Porfolio - uses the magnific popup jQuery plugin
-  $('.portfolio-popup').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-fade',
-    gallery: {
-      enabled: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300,
-      easing: 'ease-in-out',
-      opener: function (openerElement) {
-        return openerElement.is('img') ? openerElement : openerElement.find('img');
-      }
-    }
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
-
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 2
-      },
-      768: {
-        items: 4
-      },
-      900: {
-        items: 6
-      }
-    }
-  });
-
-
 });
+
+function showStuff(id) {
+  var secondPage = document.getElementById('second-page');
+  var displaySetting = secondPage.style.display;
+  document.getElementById(id).style.display = 'none';
+  if (displaySetting == 'block') {
+    secondPage.style.display = 'none';
+  }
+  else {
+    secondPage.style.display = 'block';
+  }
+}
